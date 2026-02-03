@@ -1,4 +1,4 @@
-import re
+import regex as re
 
 
 def extract_links(page: str) -> list[str]:
