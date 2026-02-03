@@ -3,8 +3,7 @@ import pathlib
 
 import click
 
-import wpextract
-
+from wikiextract.lib import extract_links
 
 @click.command(help="Extract links from a wikicode file.")
 @click.argument(
@@ -17,7 +16,7 @@ import wpextract
 )
 def main(page_path: pathlib.Path):
     content = page_path.read_text()
-    links = wpextract.extract_links(content)
+    links = extract_links(content)
     print(json.dumps(links, ensure_ascii=False, indent=2))
 
 

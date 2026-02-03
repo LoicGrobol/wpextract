@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wikiextract"
+version = "0.0.1"
+authors = [
+  { name="L. Grobol", email="lgrobol@parisnanterre.fr" },
+]
+description = "A simple wikicode parser for education purposes"
+readme = "README.md"
+requires-python = ">=3.14"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+dependencies = [
+    "click >= 8.3, < 9",
+    "regex >= 2026",
+]
+
+[project.urls]
+Homepage = "https://github.com/LoicGrobol/wpextract"
+Issues = "https://github.com/LoicGrobol/wpextract/issues"
