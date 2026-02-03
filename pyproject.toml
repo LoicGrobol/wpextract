@@ -24,3 +24,6 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/LoicGrobol/wpextract"
 Issues = "https://github.com/LoicGrobol/wpextract/issues"
+
+[project.scripts]
+wikiextract = "wikiextract.cli:main"
